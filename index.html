@@ -26,7 +26,7 @@
 .container{max-width:980px;margin:48px auto;padding:28px}
 .header{display:flex;gap:18px;align-items:center}
 .avatar{width:112px;height:112px;border-radius:20px;flex:0 0 112px;background:linear-gradient(135deg,var(--accent),#4bd1ff);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,0.6);overflow:hidden}
-.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:100px 100px 100px 100px;}
 .title{flex:1}
 .h1{font-size:22px;margin:0;color:#fff}
 .h2{margin:6px 0 0;font-size:13px;color:var(--muted)}
@@ -48,7 +48,7 @@
 .lead{font-size:14px;color:#bfe1ff}
 .share{display:flex;gap:8px;margin-top:12px}
 .share button{padding:8px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#cfe6ff}
-#posts{display:grid;grid-template-columns:1fr;gap:12px;height:550px;overflow:auto;}
+#posts{display:grid;grid-template-columns:1fr;gap:12px;height:600px;overflow:auto;margin-bottom:30px;box-sizing:border-box;padding:2em;}
 .post p img{display:block;width:100%;height:200px;object-fit:cover;margin:0 auto 12px auto;}
 .post{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
 .post h3{margin:0;font-size:15px}.post h3 a{color:#99F;}.post h3 a:hover{color:#C3F;}
@@ -66,14 +66,14 @@ svg#sigil{width:100%;height:100%}/*** Share ***/
 .xshare-icon {}
 
 .xshpopup {display: none;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 300px;
-box-shadow: 0 0 10px #96F, 0 17px  21px -15px #C9F;padding: 20px;z-index: 1000;color:#888;border-radius:8px;color:#e6eef8;background:linear-gradient(180deg,#05060a 0%,#07111a 60%),radial-gradient(1000px 400px at 10% 10%,rgba(155,107,255,0.06),transparent);}.shpopup-header {display: flex;justify-content: space-between;align-items: center;}
+box-shadow: 0 0 10px #96F, 0 17px  21px -15px #C9F;padding: 20px;z-index: 1000;border-radius:8px;color:#C9F;background:linear-gradient(180deg,#05060a 0%,#07111a 60%),radial-gradient(1000px 400px at 10% 10%,rgba(155,107,255,0.06),transparent);}.shpopup-header {display: flex;justify-content: space-between;align-items: center;}
 .xshpopup-header {display: flex;justify-content: space-between;align-items: center;}
-.xshpopup-header h2 {margin: 0;}
+.xshpopup-header h2 {margin: 0;font-size:16px;opacity:.6;}
 .xshpopup-header .xclose-btn {cursor: pointer;font-size: 20px;font-weight: bold;}
-.xshshare-buttons a {display: block;margin: 10px 0;text-decoration: none; color: #D5C58E;}
-.xshshare-buttons a:hover {display: block;margin: 10px 0;text-decoration: none; color: #fff;}
+.xshshare-buttons a {display: block;margin: 10px 0;text-decoration: none; color: #C9F;}
+.xshshare-buttons a:hover {display: block;margin: 10px 0;text-decoration: none; color: #F93;}
 .xshoverlay {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.8);
-z-index: 999;}
+z-index: 999;}.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#C9F;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}
 </style>
 </head>
 <body>
@@ -129,7 +129,7 @@ z-index: 999;}
           <h3 style="margin:0">Latest from Substack</h3>
           <a href="https://dascent.substack.com/archive" target="_blank" rel="noopener" style="font-size:13px;color:var(--muted);text-decoration:underline">open</a>
         </div>
-        <div id="posts" class="posts" style="margin-top:12px">
+        <div id="posts" class="posts xcr" style="margin-top:12px">
 
           <div class="post"><h3>Loading recent posts...</h3><p class="lead">Substack feed.</p></div>
         </div>
@@ -214,7 +214,26 @@ z-index: 999;}
       </div>
 
       <div class="card" style="margin-top:18px">
-        <div class="lead">About Tuhunukat</div>
+        <div class="lead"><strong>First Circle Architect</strong></div>
+        <p class="lead" style="margin-top:8px">Subscribe to First Circle Architect membership and unlock access not only to files you will never see shared anywhere else but perspectives which originate directly from beyond the Veil.</p>
+        <a class="btn" href="https://dascent.substack.com/s/first-circle-architect" target="_blank" rel="noopener" style="margin-top:10px;display:inline-block">Explore First Circle Architect</a>
+      </div>
+      
+        <div class="card" style="margin-top:18px">
+        <div class="lead"><strong>Entity Signature Sigils</strong></div>
+        <p class="lead" style="margin-top:8px">This section is dedicated to sharing, learning, promoting and further developing the Entity Signature Sigils originating from the new methodology of esoteric reading system developed by Dan N</p>
+        <a class="btn" href="https://dascent.substack.com/s/entity-signature-sigils" target="_blank" rel="noopener" style="margin-top:10px;display:inline-block">Explore Entity Signature Sigils</a>
+      </div>
+      
+      <div class="card" style="margin-top:18px">
+        <div class="lead"><strong>Dascent Perspective</strong></div>
+        <p class="lead" style="margin-top:8px">The name of this section is quite descriptive and reflects a reality I want you to adopt. Later I will tell you why.<br>
+But for now, do understand that Perspectives are not Facts, yes perspectives are opinions based on any of the beliefs, past and personal experiences, indoctrination, manipulation of what information reaches you and allows you to form your own opinion of course with all the influences previously mentioned.</p>
+        <a class="btn" href="https://dascent.substack.com/s/dascent-perspective" target="_blank" rel="noopener" style="margin-top:10px;display:inline-block">Explore Dascent Perspective</a>
+      </div>
+      
+      <div class="card" style="margin-top:18px">
+        <div class="lead"><strong>About Tuhunukat Collective</strong></div>
         <p class="lead" style="margin-top:8px">Tuhunukat is a collective symbolic current that appears in Dan's practice. Learn more from the shared symbols or by exploring sigils and writings.</p>
         <a class="btn" href="https://dascent.substack.com/s/tuhunukat" target="_blank" rel="noopener" style="margin-top:10px;display:inline-block">Explore with Tuhuhukat</a>
       </div>
@@ -231,7 +250,7 @@ z-index: 999;}
 
 <div class="xshpopup">
     <div class="xshpopup-header">
-        <h2>You're Awesome</h2>
+        <h2>Share Dascent.Substack.com</h2>
         <span class="xclose-btn">×</span>
     </div>
     <div class="xshshare-buttons">
@@ -354,4 +373,6 @@ loadSubstackFeed();
 </script>
 </body>
 </html>
+</html>
+
 
